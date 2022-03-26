@@ -8,40 +8,57 @@
 body {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 main {
 
-    background-color: aquamarine;
-    width: 500px;
-    padding: 10px;
+    
+
+    width: 1200px;
+    height: 100vh;
+    background-color: antiquewhite;
 }
 
-.caixa-preta {
-
-    margin: 5% 10%;
+.table {
+    display: grid;
+    justify-content: center;
+    grid-template: auto auto auto auto auto / auto auto auto auto auto;
+    gap: 10px;
+    margin: 10px 0;
+    
 }
 
-label[for=aposta] {
+.animal {
 
-    font-weight: bolder;
-    font-size: 120%;
-    margin: 5% 15%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between ;
+    
+    padding: 5px;
+    box-sizing: border-box;
+    width: 160px;
+    height: 120px;
+    background-color: azure;
+    border: 2px solid;
+
+    transition: all .4s;
 }
 
-.aposta {
-
-
+.numero {
+    align-self: start;
+    color: brown;
 }
 
-.sorteio {
+.nome {
+    font-family: serif;
+    font-size: 26.5pt;
+}
 
-    float: right;
-    margin-right: 21%;
-    padding: 0.5%;
-    font-size: 150%;
+.animal:hover {
+
+    transform: scale(1.05);
+    background-color: #f0f4f7;
 }

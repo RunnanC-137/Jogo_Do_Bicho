@@ -3,6 +3,8 @@ const sorteio = document.querySelector(".sorteio");
 const numeroSorteado = document.querySelector(".numero-sorteado");
 const table = document.querySelector(".table")
 
+
+
 const animailEscolhido = document.querySelector(".animail-escolhido")
 const numeroEscolhido = document.querySelector(".numero-escolhido")
 
@@ -52,8 +54,8 @@ Object.keys(animalsList).forEach(element => {
     </div>`
 });
 
-const animais = document.querySelectorAll(".animal")
-console.log(animais)
+/// Escopo dos eventos
+window.onload = e => {const animais = document.querySelectorAll(".animal") }
 
 
 

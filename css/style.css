@@ -21,6 +21,12 @@ main {
     background-color: antiquewhite;
 }
 
+header {
+    background-color:burlywood;
+    color:azure;
+    text-align: center;
+}
+
 .table {
     display: grid;
     justify-content: center;
@@ -28,6 +34,11 @@ main {
     gap: 10px;
     margin: 10px 0;
     
+}
+
+.sortiados {
+
+    margin: 20px;
 }
 
 .animal {

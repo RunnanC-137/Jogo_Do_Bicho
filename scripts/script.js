@@ -1,11 +1,13 @@
 
 const sorteio = document.querySelector(".sorteio");
+const sortiados = document.querySelectorAll(".sortiados");
 const numeroSorteado = document.querySelector(".numero-sorteado");
 const table = document.querySelector(".table")
 
+const escolherAnimal = document.querySelector(".escolher-animal")
+const escolherNumero = document.querySelector(".escolher-numero")
 
-
-const animailEscolhido = document.querySelector(".animail-escolhido")
+const animailEscolhido = document.querySelector(".animal-escolhido")
 const numeroEscolhido = document.querySelector(".numero-escolhido")
 
 
@@ -55,7 +57,35 @@ Object.keys(animalsList).forEach(element => {
 });
 
 /// Escopo dos eventos
-window.onload = e => {const animais = document.querySelectorAll(".animal") }
+window.onload = e => {const animais = document.querySelectorAll(".animal") 
+
+    
+
+
+
+sortiados.forEach( e => {
+    console.log(e.children)
+})
+
+animais.forEach(i => {
+
+    i.addEventListener( "click" , o => {
+
+        animailEscolhido.innerHTML = `${i.children[1].textContent}`
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

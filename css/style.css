@@ -22,7 +22,7 @@ main {
 }
 
 header {
-    background-color:burlywood;
+    background-color:brown;
     color:azure;
     text-align: center;
 }
@@ -50,8 +50,8 @@ header {
     
     padding: 5px;
     box-sizing: border-box;
-    width: 160px;
-    height: 120px;
+    width: 175px;
+    height: 130px;
     background-color: azure;
     border: 2px solid;
 
@@ -59,17 +59,67 @@ header {
 }
 
 .numero {
+
     align-self: start;
     color: brown;
+    margin-left: 3px;
+    transition: all .4s;
+}
+
+.numero:hover {
+
+    transform: scale(1.4);
 }
 
 .nome {
     font-family: serif;
-    font-size: 26.5pt;
+    font-size: 25pt;
+    transition: all .4s;
 }
 
-.animal:hover {
+.nome:hover {
 
-    transform: scale(1.05);
-    background-color: #f0f4f7;
+    transform: scale(1.2);
+}
+
+.sortiados h2 {
+    display: flex;
+    height: 50px;
+    width: 30%;
+    justify-content: space-between;
+}
+
+button {
+
+    background: brown;
+    color: white;
+
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    height: 40px;  
+    width: 90px;
+
+    font: bold 15pt arial, Arial;
+    transition: all .4s;
+}
+
+
+.sortiados div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    border: black solid 2px;
+    border-radius: 3px;
+    
+    height: 40px;  
+    width: 125px;
+    box-sizing: border-box;
+
+    font: bold 20pt arial, Arial;
+    font-family:'Times New Roman', Times, serif;
 }

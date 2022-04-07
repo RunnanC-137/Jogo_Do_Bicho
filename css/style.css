@@ -14,8 +14,6 @@ body {
 
 main {
 
-    
-
     width: 1200px;
     height: 100vh;
     background-color: antiquewhite;
@@ -28,6 +26,7 @@ header {
 }
 
 .table {
+
     display: grid;
     justify-content: center;
     grid-template: auto auto auto auto auto / auto auto auto auto auto;
@@ -36,10 +35,6 @@ header {
     
 }
 
-.sortiados {
-
-    margin: 20px;
-}
 
 .animal {
 
@@ -47,12 +42,15 @@ header {
     flex-flow: column;
     align-items: center;
     justify-content: space-between ;
-    
-    padding: 5px;
+
     box-sizing: border-box;
+    padding: 5px;
+    
     width: 175px;
     height: 130px;
+    
     background-color: azure;
+
     border: 2px solid;
 
     transition: all .4s;
@@ -82,44 +80,59 @@ header {
     transform: scale(1.2);
 }
 
-.sortiados h2 {
+
+.sorteio {
+
     display: flex;
-    height: 50px;
-    width: 30%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    width: 100%;
+
 }
 
-button {
-
-    background: brown;
-    color: white;
-
-    border: none;
-    box-sizing: border-box;
-    border-radius: 3px;
-
-    height: 40px;  
-    width: 90px;
-
-    font: bold 15pt arial, Arial;
-    transition: all .4s;
-}
-
-
-.sortiados div {
+.sorteio .h2 div, .sorteio .sortear button{
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: white;
-    border: black solid 2px;
-    border-radius: 3px;
-    
-    height: 40px;  
-    width: 125px;
-    box-sizing: border-box;
+    height: 40px;
+    width: 130px;
 
-    font: bold 20pt arial, Arial;
-    font-family:'Times New Roman', Times, serif;
+    margin: 15px;
+
+    border-radius: 4px;
+
+    font-size: 21pt;
+}
+
+div.escolhidos div{
+
+    background-color: brown;
+    color: azure;
+
+    transition: all .4s;
+}
+
+div.aposta div{
+
+    background-color: azure;
+    border: 2px solid;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all .4s;
+}
+
+.sortear{
+
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.sortear button {
+
+    background-color: white;
+    color: brown;
 }

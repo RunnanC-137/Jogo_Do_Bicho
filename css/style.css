@@ -133,6 +133,15 @@ div.aposta div{
 
 .sortear button {
 
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    transition: all .4s;
+
+}
+.sortear button:hover {
+
     background-color: white;
     color: brown;
+    font-weight: bolder;
 }

@@ -15,8 +15,7 @@ body {
 main {
 
     width: 1200px;
-    height: 100vh;
-    background-color: antiquewhite;
+    height: 100%;
 }
 
 header {
@@ -31,7 +30,8 @@ header {
     justify-content: center;
     grid-template: auto auto auto auto auto / auto auto auto auto auto;
     gap: 10px;
-    margin: 10px 0;
+    padding: 10px 0;
+    background-color: antiquewhite;
     
 }
 
@@ -144,4 +144,35 @@ div.aposta div{
     background-color: white;
     color: brown;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+ 
+    
+    main, body {
+
+        width: 100vw;
+    }
+    
+    .table {
+
+        grid-template: auto auto auto auto auto auto auto auto/  auto auto;
+        gap: 5px;
+    }
+    
+    .animal {
+
+        width: 150px;
+        height: 120px;
+    }
+  
+    .sorteio {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+
+    }
+
 }

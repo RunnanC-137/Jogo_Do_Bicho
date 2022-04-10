@@ -40,7 +40,7 @@ const animalsList = {
     Vaca:["25"]
 
 }
-
+///Escopo das funções
 
 
 
@@ -60,19 +60,35 @@ Object.keys(animalsList).forEach(element => {
 /// Escopo dos eventos
 window.onload = e => {const animais = document.querySelectorAll(".animal") 
 
+
+
 animais.forEach(i => {
 
-    i.childNodes[3].addEventListener( "click" , () => {
-
-        animailEscolhido.innerHTML = `${i.children[1].textContent}`       
+    i.addEventListener("click", () => {
+        
     })
-
-    i.childNodes[1].addEventListener( "click" , () => {
-
-            numeroEscolhido.innerHTML = `${i.children[0].textContent}`
-        })
 })
 
+
+
+animais.forEach(i => {
+
+    i.children[1].addEventListener( "click" , function (i) {
+        
+        animailEscolhido.innerHTML = this.textContent
+    })
+
+    i.children[0].addEventListener( "click" , function (i) {
+
+        numeroEscolhido.innerHTML = this.textContent
+    })
+})
+
+animais.forEach(function (i) {
+
+
+    console.log(i.this)
+})
 iniciar.addEventListener("click", () => {
 
     let animal = Math.floor(Math.random() * 25)
@@ -97,28 +113,7 @@ iniciar.addEventListener("click", () => {
 })
 
 
-    
-const webSites = {
-    
-    
-    criadorDeCurriculo: {
-        site:"https://runnanc-137.github.io/WebSite-s/Criador_De_Curriculo",
-        nome:"Criador de currículo",
-        concluido: false,
-        descricao: "Aplicação criada com o intuito de ajudar quem não tem um currículo cria um de forma fácil. Projeto criado para treinar as habilidades de DOM e experiência do usuário.",
-        img: "imgs/sites.png.opdownload"
-    },
 
-    
-    
-    simpleProjects:{
-        site:"https://runnanc-137.github.io/WebSite-s/projetinhos",
-        nome:"Simples projects",
-        concluido: false,
-        descricao: "Aqui eu crio projetinhos de pequeno porte para fins específicos, são projetos simples execultados com HTML, CSS e JavaScript.",
-        img: "imgs/pngegg.png"
-    }
-}
 
 
 function indexBusc (object, chave=""){

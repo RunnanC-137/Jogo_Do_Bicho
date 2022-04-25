@@ -1,4 +1,3 @@
 # jogo_do_bicho
-sorteio do bixo
+ <p align="center"> 🚧 Em construçã..🔨 🚧</p>
 
-[teste o site](https://runnanc-137.github.io/WebSite-s/Jogo_do_Bixo)
